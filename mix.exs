@@ -49,6 +49,7 @@ defmodule Amqpx.MixProject do
   defp deps do
     [
       {:amqp, "~> 1.3"},
+      {:amqp_client, github: "larrywax/rabbitmq-erlang-client", branch: "master", override: true},
       {:elixir_uuid, "~> 1.1"},
       {:prima_logger_logstash_backend, "~> 1.1.1"},
       {:credo, "~> 1.1.4", only: [:dev, :test]},
